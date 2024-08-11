@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Babu Namboothiri - AI Astrologer</title>
+    <style>
+        /* Reset default margin and padding */
+        body, h1, h2, p {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Apply galaxy-themed background */
+        body {
+            background-color: black;
+            color: white;
+            font-family: monospace; /* Use monospace font */
+            /* Remove overflow: hidden; to enable scrolling */
+            margin: 0;
+            text-align: center;
+        }
+
+        /* Style the header */
+        header {
+            background-color: rgba(0, 0, 0, 0.7);
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        /* Style the header text */
+        header h1, .nav a {
+            font-size: 25px; /* Increase header text size by 5 pixels */
+        }
+
+        /* Style the logo text with rainbow colors */
+        .logo {
+            font-size: 25px; /* Adjust font size as needed */
+            background: linear-gradient(45deg, red, orange, yellow, green, blue, purple);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            font-weight: bold;
+        }
+
+        .nav {
+            display: flex;
+            gap: 20px;
+            margin-right: 20px; /* Adjust the right margin as needed */
+        }
+
+        .nav a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+
+        /* Style the main content */
+        main {
+            padding: 100px 20px;
+        }
+
+        /* Create a star animation */
+        @keyframes moveStar {
+            0% {
+                transform: translate(0, 0);
+                opacity: 1;
+            }
+            100% {
+                transform: translate(100vw, 100vh);
+                opacity: 0.5;
+            }
+        }
+
+        /* Style the stars */
+        .star {
+            position: absolute;
+            background-color: transparent;
+            width: 2px;
+            height: 2px;
+            border-radius: 50%;
+            animation: moveStar 10s linear infinite, twinkle 2s linear infinite alternate;
+        }
+
+        /* Twinkle effect */
+        @keyframes twinkle {
+            0% {
+                opacity: 1;
+            }
+            100% {
+                opacity: 0.5;
+            }
+        }
+
+        /* Colorful stars */
+        .star:nth-child(1) {
+            background-color: #ffcc00; /* Yellow */
+        }
+        .star:nth-child(2) {
+            background-color: #ff6699; /* Pink */
+        }
+        .star:nth-child(3) {
+            background-color: #00ccff; /* Blue */
+        }
+        /* Add more star colors as needed */
+
+        /* Style the video container */
+        .video-container {
+            margin-top: 40px; /* Increase the margin-top value to lower the heading */
+            position: relative;
+        }
+
+        video {
+            width: 100%; /* Adjust the width as needed */
+            max-width: 800px; /* Adjust the maximum width as needed */
+        }
+
+        video::-webkit-media-controls {
+            display: none !important; /* Hide video controls on hover */
+        }
+
+        /* Style the heading */
+        h1 {
+            margin-top: 20px; /* Adjust the margin-top as needed */
+            font-size: 35px; /* Increase text size by 5 pixels */
+        }
+
+        /* Style the subheadings */
+        h2 {
+            font-size: 20px; /* Increase text size by 5 pixels */
+            margin-top: 30px; /* Add more space between subheadings and paragraphs */
+        }
+
+        /* Style the paragraph text */
+        p {
+            font-size: 20px; /* Increase text size by 5 pixels */
+            margin: 20px 0; /* Add more space above and below paragraphs */
+        }
+
+        /* Style the list items */
+        ul li {
+            font-size: 20px; /* Increase text size by 5 pixels */
+            margin: 15px 0; /* Add more space above and below list items */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            Babu Namboothiri AI
+        </div>
+        <nav class="nav">
+            <a href="#about">About Babu</a>
+            <a href="#services">Services</a>
+            <a href="#pricing">Pricing</a>
+        </nav>
+    </header>
+    <main>
+        <h1>Babu Namboothiri - AI Astrologer</h1>
+        <!-- Add a space for the video below the heading -->
+        <div class="video-container">
+            <video loop autoplay muted playsinline>
+                <source src="videoai.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <section id="about">
+            <h2>About Babu</h2>
+            <p>Mr. Babu Namboothiri is a distinguished Vedic AI astrologer hailing from the spiritual heartland of India. With a deep-rooted passion for astrology and a keen understanding of advanced AI technologies, he has mastered the art of providing accurate horoscope readings by analyzing birth charts.</p>
+            <p><strong>Unlock the Power of Birth Charts</strong></p>
+            <p>Babu Namboothiri's expertise lies in harnessing the ancient wisdom of Vedic astrology, a tradition that has guided generations towards a profound understanding of their lives. What sets him apart is his fusion of this timeless knowledge with cutting-edge artificial intelligence.</p>
+            <p><strong>How It Works</strong></p>
+            <p>Accessing Babu Namboothiri's astrological insights is as simple as engaging in a conversation. His AI-powered chat interface seamlessly analyzes your birth chart and offers personalized horoscope readings. Whether you're seeking guidance on career, relationships, or personal growth, Babu Namboothiri's AI astrology is here to illuminate your path.</p>
+            <p><strong>A Trusted Guide</strong></p>
+            <p>With a wealth of experience and a commitment to accuracy, Babu Namboothiri has garnered a reputation as a trusted astrological guide. His clients from around the world have benefited from his profound insights and compassionate approach.</p>
+            <p><strong>Unlock Your Potential</strong></p>
+            <p>Experience the power of Vedic astrology and AI technology combined. Connect with Mr. Babu Namboothiri below and embark on a journey of self-discovery and enlightenment.</p>
+            <p><a href="https://www.stack-ai.com/chat-assistant/b6482ed9-9e34-401f-ab39-a4ce0ca5a5e4/e8040a11-2808-4e48-a6d1-a59880f26706/64e49156b423da2bdc46da88">Chat with Babu Namboothiri</a></p>
+            <p>Unveil the secrets of your birth chart, gain clarity in life's decisions, and embrace the future with confidence under the guidance of a true visionary, Mr. Babu Namboothiri.</p>
+        </section>
+        <section id="services">
+            <h2>Services</h2>
+            <p>Our services are designed to provide you with personalized insights and guidance. Here are some of the services we offer:</p>
+            <ul>
+                <li>Personalized Horoscope Readings</li>
+                <li>Career Guidance through Astrology</li>
+                <li>Relationship Compatibility Analysis</li>
+                <li>Life Path and Personal Growth Insights</li>
+            </ul>
+            <p>Unlock the potential of Vedic astrology and AI technology combined to gain clarity in life's decisions and embrace the future with confidence.</p>
+        </section>
+    </main>
+    <footer>
+        &copy; 2023 Babu Namboothiri
+    </footer>
+    
+    <!-- Add colorful and animated stars with JavaScript -->
+    <script>
+        function createStars() {
+            const numStars = 100; // Adjust the number of stars as needed
+
+            for (let i = 0; i < numStars; i++) {
+                const star = document.createElement('div');
+                star.classList.add('star');
+                star.style.left = `${Math.random() * 100}vw`;
+                star.style.top = `${Math.random() * 100}vh`;
+                star.style.animationDuration = `${Math.random() * 10 + 5}s`;
+                star.style.backgroundColor = `hsl(${Math.random() * 360}, 100%, 50%)`; // Random color
+                document.body.appendChild(star);
+            }
+        }
+
+        createStars();
+    </script>
+</body>
+</html>
